@@ -12,8 +12,11 @@
 <meta name="generator" content="Hugo 0.102.3" />
 
 
+  <meta name="description" content="Nginx Proxy Manager (NPM). This is a docker container that will allow us to easily manage our Nginx instances. We will be using this to add SSL to our site as well as to proxy our site to our domain.
+Assuming you are running a Linux system based off of Debian, run the following command to install some prerequisites:
+$ sudo apt install -y apt-transport-https ca-certificates curl software-properties-common nano curl wget Then, add the GPG keys" />
 
-    <title>Proxdocs</title>
+    <title>Nginx Proxy Manager | Proxdocs</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -32,24 +35,67 @@
     
 
     
+  <meta
+    property="og:title"
+    content="Nginx Proxy Manager"
+  />
   <meta property="og:site_name" content="Proxdocs" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://proxdocs.motortruck1221.tech/" />
+  <meta property="og:description" content="Nginx Proxy Manager (NPM). This is a docker container that will allow us to easily manage our Nginx instances. We will be using this to add SSL to our site as well as to proxy our site to our domain.
+Assuming you are running a Linux system based off of Debian, run the following command to install some prerequisites:
+$ sudo apt install -y apt-transport-https ca-certificates curl software-properties-common nano curl wget Then, add the GPG keys" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://proxdocs.motortruck1221.tech/docs/npm/" />
 
-
+<meta property="article:section" content="Docs" />
+    <meta
+      property="article:published_time"
+      content="2022-08-31T18:28:11+00:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2022-08-31T18:28:11+00:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="ProxDocs" />
+<meta name="twitter:title" content="Nginx Proxy Manager" />
+  <meta name="twitter:description" content="Nginx Proxy Manager (NPM). This is a docker container that will allow us to easily manage our Nginx instances. We will be using this to add SSL to our site as well as to proxy our site to our domain.
+Assuming you are running a Linux system based off of Debian, run the following command to install some prerequisites:
+$ sudo apt install -y apt-transport-https ca-certificates curl software-properties-common nano curl wget Then, add the GPG keys" />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "Proxdocs",
-      "url": "https://proxdocs.motortruck1221.tech",
-      "inLanguage": "en"
+      "@type": "TechArticle",
+      "articleSection": "Docs",
+      "name": "Nginx Proxy Manager",
+      "url" : "https://proxdocs.motortruck1221.tech/docs/npm/",
+      "headline": "Nginx Proxy Manager",
+      "description": "Nginx Proxy Manager (NPM). This is a docker container that will allow us to easily manage our Nginx instances. We will be using this to add SSL to our site as well as to proxy our site to our domain.\nAssuming you are running a Linux system based off of Debian, run the following command to install some prerequisites:\n$ sudo apt install -y apt-transport-https ca-certificates curl software-properties-common nano curl wget Then, add the GPG keys",
+      "wordCount" : "795",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://proxdocs.motortruck1221.tech/docs/npm/"
+      },
+      "copyrightHolder" : "Proxdocs",
+      "copyrightYear" : "2022",
+      "dateCreated": "2022-08-31T18:28:11.00Z",
+      "datePublished": "2022-08-31T18:28:11.00Z",
+      "dateModified": "2022-08-31T18:28:11.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Proxdocs",
+          "url": "https://proxdocs.motortruck1221.tech",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://proxdocs.motortruck1221.tech/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
   }
   </script>
 
@@ -114,7 +160,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://proxdocs.motortruck1221.tech/" rel="canonical" type="text/html" />
+  <link href="https://proxdocs.motortruck1221.tech/docs/npm/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -357,7 +403,7 @@
                 <span class="flex">
                   <a
                     href="/docs/npm/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Nginx Proxy Manager
                   </a>
@@ -739,29 +785,142 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>ProxDocs</h1>
-    <p>ProxDocs is a highly detailed and useful guide to hosting a web proxy site.</p>
-<hr>
-<p>This is a forked version of ProxDocs from <a
+    <h1>Nginx Proxy Manager</h1>
+    <p><a
   class="gdoc-markdown__link"
-  href="https://github.com/degen-dev/proxdocs"
->Degenerate(degen-dev)</a> and made into a website by <a
+  href="https://nginxproxymanager.com/"
+>Nginx Proxy Manager</a> (NPM). This is a docker container that will allow us to easily manage our Nginx instances. We will be using this to add SSL to our site as well as to proxy our site to our domain.</p>
+<p>Assuming you are running a Linux system based off of Debian, run the following command to install some prerequisites:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ sudo apt install -y apt-transport-https ca-certificates curl software-properties-common nano curl wget
+</span></span></code></pre></div><p>Then, add the GPG keys</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg <span class="p">|</span> sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+</span></span></code></pre></div><p>After which add the Docker repository</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s2">&#34;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2"> signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> stable&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</span></span></code></pre></div><p>Then, update your package list</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ sudo apt update
+</span></span></code></pre></div><p>After all of this is done, we are going to make sure you are goin to install Docker from the repository added. And not just the base Ubuntu docker package</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ apt-cache policy docker-ce
+</span></span></code></pre></div><p>After all of this we can FINALLY install docker and docker compose (which we will need later)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ sudo apt install docker-ce docker-compose-plugin
+</span></span></code></pre></div><p><span style="color:red">These next steps are OPTIONAL</span>:<br>
+We are going to add the current user to the docker group so we don&rsquo;t have to use sudo every time we want to run a docker command. This is not recommended for production environments, but for development it is fine.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ sudo usermod -aG docker <span class="si">${</span><span class="nv">USER</span><span class="si">}</span>
+</span></span></code></pre></div><p>Then, we are going to log out and log back in so the group change takes effect.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ su - <span class="si">${</span><span class="nv">USER</span><span class="si">}</span>
+</span></span></code></pre></div><p><span style="color:red">End Optional Config</span><br>
+Now we are going to install <a
   class="gdoc-markdown__link"
-  href="https://github.com/motortruck1221/"
->MotorTruck1221</a></p>
+  href="https://nginxproxymanager.com/"
+>Nginx Proxy Manager</a> (NPM).</p>
+<ul>
+<li>First, we are going to create a directory for NPM to store its data in</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ mkdir -p ~/npm/ <span class="o">&amp;&amp;</span> mkdir -p ~/npm/data <span class="o">&amp;&amp;</span> mkdir -p ~/npm/letsencrypt <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ~/npm/
+</span></span></code></pre></div><ul>
+<li>Second we are going to create a docker-compose.yml file</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">touch docker-compose.yml
+</span></span></code></pre></div><ul>
+<li>Third we are going to add the following to the docker-compose.yml file <span style="color:red">NOTE: Do NOT CHANGE THE PORT NUMBERS THI WILL GO VERY POORLY</span><br></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ nano docker-compose.yml
+</span></span></code></pre></div><p>Then copy this config into the file</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">app</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;jc21/nginx-proxy-manager:latest&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># These ports are in format &lt;host-port&gt;:&lt;container-port&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s1">&#39;80:80&#39;</span><span class="w"> </span><span class="c"># Public HTTP Port</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s1">&#39;443:443&#39;</span><span class="w"> </span><span class="c"># Public HTTPS Port</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s1">&#39;81:81&#39;</span><span class="w"> </span><span class="c"># Admin Web Port</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Add any other Stream port you want to expose</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># - &#39;21:21&#39; # FTP</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># Uncomment the next line if you uncomment anything in the section</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># environment:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Uncomment this if you want to change the location of </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># the SQLite DB file within the container</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># DB_SQLITE_FILE: &#34;/data/database.sqlite&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Uncomment this if IPv6 is not enabled on your host</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># DISABLE_IPV6: &#39;true&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./data:/data</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./letsencrypt:/etc/letsencrypt</span><span class="w">
+</span></span></span></code></pre></div><p>or alternatively you can use the following command to create the file</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ curl https://hastebin.com/raw/ivulifoxer &gt; docker-compose.yml
+</span></span></code></pre></div><p>If you wish to use a different database beside sqlite3 you can find the instructions <a
+  class="gdoc-markdown__link"
+  href="https://nginxproxymanager.com/setup/#using-mysql-mariadb-database"
+>here</a></p>
+<ul>
+<li>Fourth we are now going to start NPM</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ sudo docker compose up -d
+</span></span></code></pre></div><ul>
+<li>Finally we are going to open up the admin page in our browser at: <code>http://(your server ip here):81</code> removing the parentheses and adding you server IP. <br>
+Upon opening the admin panel you will be prompted for an email and password the default email address is: <br> <code>admin@example.com</code> <br> and the default password is: <br>
+<code>changeme</code> <br>
+You will be prompted to change the password and email address. <br>
+After this setup we can get to adding your proxy&rsquo;s to NPM.</li>
+<li>First we are going to setup ssl. I am really lazy so here is a video that is going to show you how to do this(not mine): <a
+  class="gdoc-markdown__link"
+  href="https://youtu.be/rj7DZdWMK2k"
+>Here</a></li>
+<li>Second we are going to add a proxy proxy host to NPM.
+Click on Proxy Hosts in the left hand menu and then click on the + button in the top right corner. <br>
+<img
+  src="/TNproxhosts.png"
+  alt="Proxy Hosts"
+  
+/>
+<img
+  src="/TNaddproxhosts.png"
+  alt="Proxy Hosts"
+  
+/>
+Then fill out the form as follows: <br>
+Your domain or subdomain: <br>
+<img
+  src="/TNproxform.png"
+  alt="Proxy Hosts form"
+  
+/>
+Leave the http field alone (unless you for some reason have https on)
+Fill out the Foward Hostname/IP field with the IP of where your proxy is hosted. <br>
+For foward port change it to the port your proxy is on. <br>
+Turn on Block Common Explotis switch. <br>
+Then Turn on the Websockets Support switch. <br>
+Now click on the SSL tab and select the SSL certificate you created earlier(from the video). <br>
+After which Click on the advanced tab. And fill out the Custom Nginx configuration field with the following: <br></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl">  <span class="k">location</span> <span class="s">/</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">                <span class="c1"># Upgrade WebSockets
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kn">proxy_set_header</span> <span class="s">Upgrade</span> <span class="nv">$http_upgrade</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="kn">proxy_set_header</span> <span class="s">Connection</span> <span class="s">&#39;Upgrade&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># Increase header buffer
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kn">proxy_connect_timeout</span> <span class="mi">10</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">                <span class="kn">proxy_send_timeout</span> <span class="mi">90</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">                <span class="kn">proxy_read_timeout</span> <span class="mi">90</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">                <span class="kn">proxy_buffer_size</span> <span class="mi">128k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="kn">proxy_buffers</span> <span class="mi">4</span> <span class="mi">256k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="kn">proxy_busy_buffers_size</span> <span class="mi">256k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="kn">proxy_temp_file_write_size</span> <span class="mi">256k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="kn">proxy_pass</span> <span class="s">http://sameipaswhatyourproxyipis:sameportaswhatyourproxyportis</span><span class="p">;</span> <span class="c1"># change this to the port UltraViolet is listening on
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># The small block below will block googlebot
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="kn">if</span> <span class="s">(</span><span class="nv">$http_user_agent</span> <span class="p">~</span> <span class="sr">(Googlebot))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kn">return</span> <span class="mi">403</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span></code></pre></div><p>After this you can click on the save button and you are done. <br></p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="why">
-        Why?
-        <a data-clipboard-text="https://proxdocs.motortruck1221.tech/#why" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Why?" aria-label="Anchor to: Why?" href="#why">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>Making &ldquo;sufficient&rdquo; documentation for a proxy site is difficult and lengthy. ProxDocs exists so that proxy site developers do not have to make lengthy documentation for their site, but can rather point users to this instead, allowing aspiring self-hosters to more easily be able to set up their own instance of your site!</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="table-of-contents">
-        Table Of Contents
-        <a data-clipboard-text="https://proxdocs.motortruck1221.tech/#table-of-contents" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Table Of Contents" aria-label="Anchor to: Table Of Contents" href="#table-of-contents">
+    <h2 id="authors">
+        Authors
+        <a data-clipboard-text="https://proxdocs.motortruck1221.tech/docs/npm/#authors" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Authors" aria-label="Anchor to: Authors" href="#authors">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
@@ -769,66 +928,10 @@
 <ul>
 <li><a
   class="gdoc-markdown__link"
-  href="/docs/Setup"
->Setup</a></li>
-<li><a
-  class="gdoc-markdown__link"
-  href="/docs/Configuration"
->Configuration</a></li>
-<li><a
-  class="gdoc-markdown__link"
-  href="/docs/Hosting"
->Hosting</a></li>
-<li><a
-  class="gdoc-markdown__link"
-  href="/docs/Domains"
->Domains</a></li>
-<li><a
-  class="gdoc-markdown__link"
-  href="/docs/Nginx"
->Nginx</a></li>
-<li><a
-  class="gdoc-markdown__link"
-  href="/docs/SSL"
->SSL/TLS</a></li>
+  href="https://github.com/motortruck1221"
+>MotorTruck1221</a></li>
 </ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="authors">
-        Authors
-        <a data-clipboard-text="https://proxdocs.motortruck1221.tech/#authors" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Authors" aria-label="Anchor to: Authors" href="#authors">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>The authors of each file can be viewed in the &ldquo;Authors&rdquo; section of each file.</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="contributing">
-        Contributing
-        <a data-clipboard-text="https://proxdocs.motortruck1221.tech/#contributing" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Contributing" aria-label="Anchor to: Contributing" href="#contributing">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>See <a
-  class="gdoc-markdown__link"
-  href="/docs/How-To-Contribute-License/CONTRIBUTING"
->CONTRIBUTING</a> for information on contributing to ProxDocs.</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="license">
-        License
-        <a data-clipboard-text="https://proxdocs.motortruck1221.tech/#license" class="gdoc-page__anchor clip flex align-center" title="Anchor to: License" aria-label="Anchor to: License" href="#license">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<pre tabindex="0"><code>Copyright (C) 2022-present, Degen-dev
 
-Permission is granted to copy, distribute and/or modify this document 
-under the terms of the GNU Free Documentation License, Version 1.3
-or any later version published by the Free Software Foundation;
-with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-A copy of the license is included in the file entitled &#34;LICENSE.md&#34;.
-</code></pre>
   </article>
 
 

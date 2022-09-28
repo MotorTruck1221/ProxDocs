@@ -84,6 +84,17 @@ $ sudo apt install nginx After you have Nginx installed, configure it in /etc/ng
     </item>
     
     <item>
+      <title>Nginx Proxy Manager</title>
+      <link>https://proxdocs.motortruck1221.tech/docs/npm/</link>
+      <pubDate>Wed, 31 Aug 2022 18:28:11 +0000</pubDate>
+      
+      <guid>https://proxdocs.motortruck1221.tech/docs/npm/</guid>
+      <description>Nginx Proxy Manager (NPM). This is a docker container that will allow us to easily manage our Nginx instances. We will be using this to add SSL to our site as well as to proxy our site to our domain.
+Assuming you are running a Linux system based off of Debian, run the following command to install some prerequisites:
+$ sudo apt install -y apt-transport-https ca-certificates curl software-properties-common nano curl wget Then, add the GPG keys</description>
+    </item>
+    
+    <item>
       <title>SSL</title>
       <link>https://proxdocs.motortruck1221.tech/docs/SSL/</link>
       <pubDate>Wed, 31 Aug 2022 18:28:11 +0000</pubDate>
